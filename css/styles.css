@@ -1,6 +1,7 @@
 * {
   text-decoration: none;
   list-style: none;
+  margin: 0 auto;
 }
 
 body {
@@ -28,13 +29,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-blue-part {
+.logo__blue-part {
   font-weight: 700;
   color: var(--standard-blue);
 }
 
-.logo-black-part {
+.logo__black-part {
   color: var(--dark-black);
+}
+
+.logo__white-part {
+  color: var(--standard-white);
 }
 
 /* LOGO END */
@@ -48,8 +53,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-.nav-format {
+.nav__format {
   color: var(--standard-black);
+  cursor: pointer;
 }
 
 .adress {
@@ -59,8 +65,17 @@ body {
   letter-spacing: 0.02em;
 }
 
-.adress-format {
+.adress__format {
   color: var(--light-grey);
+}
+
+.nav__format:hover,
+.nav__format:focus,
+.adress__format:hover,
+.adress__format:focus,
+.adress__format-footer:hover,
+.adress__format-footer:focus {
+  color: var(--standard-blue);
 }
 
 /* NAV END */
@@ -71,7 +86,7 @@ body {
   background-color: var(--background-black-color);
 }
 
-.main-header-text {
+.main-header__text {
   color: var(--standard-white);
   text-transform: uppercase;
   font-size: 44px;
@@ -91,9 +106,10 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
-.button-order-text {
+.button__order-text {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
@@ -111,16 +127,71 @@ body {
   letter-spacing: 0.03em;
 }
 
-.lorem-ipsum-header {
+.lorem-ipsum__header {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.lorem-ipsum-text {
+.lorem-ipsum__text {
   font-weight: 400;
   line-height: 1.71;
   color: var(--light-grey);
 }
 
 /* LOREM IPSUM END*/
+
+/* MAIN BUSINESS START*/
+
+.main-business {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* MAIN BUSINESS END*/
+
+/* OUR TEAM START*/
+
+.our-team {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.our-team__individual {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.our-team__job-title {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+/* OUR TEAM END */
+
+/* FOOTER START */
+
+.footer_wrapper {
+  background-color: var(--background-black-color);
+}
+
+.adress__format-footer {
+  color: var(--standard-white);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* FOOTER END */
